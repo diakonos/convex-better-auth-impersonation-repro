@@ -19,21 +19,22 @@ When logged in normally, this logs a session as expected. However, when imperson
 6/8/2025, 6:10:15 pm [CONVEX Q(userProfiles:getUserProfile)] [LOG] 'getUserProfile session:' null
 ```
 
-## Steps to reproduce:
+## Run locally
 
-1. Clone this repo, install dependencies, and setup a .env file with the following:
+1. Clone this repo, install dependencies, and setup ENV varaibles:
 
-- `NEXT_PUBLIC_CONVEX_URL`
-- `CONVEX_SITE_URL`
-
-And set the `BETTER_AUTH_SECRET` ENV variable in Convex.
+- `NEXT_PUBLIC_CONVEX_URL` in `.env` file.
+- `BETTER_AUTH_SECRET` in Convex.
 
 2. Start the dev server for both Convex and Next.js.
-3. Create a new account by signing up, and manually set this user's role as admin in the Convex backend (in the betterAuth component).
+
+## Steps to reproduce:
+
+1. Create a new account by signing up, and manually set this user's role as admin in the Convex backend (in the betterAuth component).
 
    (note the logged session information)
 
-4. Create a different account with the default role.
-5. Using the admin account, go to the admin dashboard and click "Impersonate" on the normal user account.
+2. Create a different account with the default role.
+3. Using the admin account, go to the admin dashboard and click "Impersonate" on the normal user account.
 
    (note the logged session information)

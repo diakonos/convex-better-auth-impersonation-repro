@@ -7,7 +7,7 @@ import { betterAuthComponent } from "../../convex/auth";
 import { type GenericCtx } from "../../convex/_generated/server";
 
 // You'll want to replace this with an environment variable
-const siteUrl = "http://localhost:3000";
+const siteUrl = process.env.VERCEL_URL ?? "http://localhost:3000";
 
 export const createAuth = (ctx: GenericCtx) =>
   // Configure your Better Auth instance here
