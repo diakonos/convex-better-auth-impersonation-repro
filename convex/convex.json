@@ -1,0 +1,10 @@
+{
+  "project": {
+    "name": "admin-repro"
+  },
+  "functions": {
+    "codegen": {
+      "enabled": true
+    }
+  }
+}
