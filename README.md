@@ -23,8 +23,10 @@ When logged in normally, this logs a session as expected. However, when imperson
 
 1. Clone this repo, install dependencies, and setup a .env file with the following:
 
-- NEXT_PUBLIC_CONVEX_URL
-- CONVEX_SITE_URL
+- `NEXT_PUBLIC_CONVEX_URL`
+- `CONVEX_SITE_URL`
+
+And set the `BETTER_AUTH_SECRET` ENV variable in Convex.
 
 2. Start the dev server for both Convex and Next.js.
 3. Create a new account by signing up, and manually set this user's role as admin in the Convex backend (in the betterAuth component).
